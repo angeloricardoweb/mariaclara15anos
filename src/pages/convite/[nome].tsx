@@ -21,14 +21,12 @@ export default function Nome(props: Props) {
               alt="Maria Clara"
               className="max-w-[600px] w-full"
             />
-            <Fade delay="500">
               <div className="max-w-xl mt-10">
                 <h2 className="text-center text-bold uppercase text-rose-100 italic text-lg">
                   Para viver emoções deste dia tão importante quero estar ao
                   lado de pessoas especiais como você, <strong> {nome}.</strong>
                 </h2>
               </div>
-            </Fade>
           </Fade>
         ) : (
           <Fade>
