@@ -14,7 +14,7 @@ export default function Nome(props: Props) {
   useEffect(()=>{
     setTimeout(() => {
       setAberto(true)
-    }, 4000);
+    }, 5000);
   
   },[])
 
