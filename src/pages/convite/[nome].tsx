@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Fade } from 'react-reveal'
 import Container from '../../components/Partials/Container'
 
@@ -10,6 +10,13 @@ type Props = {
 export default function Nome(props: Props) {
   const [aberto, setAberto] = useState(false)
   const { nome } = props
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setAberto(true)
+    }, 4000);
+  
+  },[])
 
   return (
     <div className="bg-[url(/bg.jpg)] h-screen bg-cover bg-center flex flex-col items-center justify-center">
@@ -35,16 +42,6 @@ export default function Nome(props: Props) {
                 Como as Plantas, a amizade não deve ser muito nem pouco regada.
               </h2>
               <span>- Carlos Drummond de Andrade</span>
-            </div>
-            <div className="flex justify-center mt-10">
-              <Fade delay="5000">
-                <button
-                  onClick={() => setAberto(true)}
-                  className="shadow px-4 py-2 rounded-full mx-auto animate-pulse text-xl text-rose-100"
-                >
-                  Abrir convite
-                </button>
-              </Fade>
             </div>
           </Fade>
         )}
