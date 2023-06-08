@@ -23,11 +23,9 @@ export default function Nome(props: Props) {
         {aberto ? (
           <Fade>
             <img
-              src="/nome.svg"
+              src="/nome.png"
               alt="Maria Clara"
               className="max-w-[600px] w-full
-              
-              inner-shadow-4xl
               "
             />
             <div className="max-w-xl mt-10">
