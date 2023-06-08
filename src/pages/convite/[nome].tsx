@@ -11,12 +11,11 @@ export default function Nome(props: Props) {
   const [aberto, setAberto] = useState(false)
   const { nome } = props
 
-  useEffect(()=>{
+  useEffect(() => {
     setTimeout(() => {
       setAberto(true)
-    }, 5000);
-  
-  },[])
+    }, 5000)
+  }, [])
 
   return (
     <div className="bg-[url(/bg.jpg)] h-screen bg-cover bg-center flex flex-col items-center justify-center">
@@ -26,14 +25,28 @@ export default function Nome(props: Props) {
             <img
               src="/nome.svg"
               alt="Maria Clara"
-              className="max-w-[600px] w-full"
+              className="max-w-[600px] w-full
+              
+              inner-shadow-4xl
+              "
             />
-              <div className="max-w-xl mt-10">
+            <div className="max-w-xl mt-10">
+              <h2 className="text-center text-bold text-rose-100 italic text-lg">
+                Para viver emoções deste dia tão importante quero estar ao lado
+                de pessoas especiais como você, <strong> {nome}.</strong>
+              </h2>
+              <div className="mt-20">
                 <h2 className="text-center text-bold uppercase text-rose-100 italic text-lg">
-                  Para viver emoções deste dia tão importante quero estar ao
-                  lado de pessoas especiais como você, <strong> {nome}.</strong>
+                  Cidade Nova 6, We 72 n°921 - Coqueiro, Ananindeua
+                </h2>
+                <h2 className="text-center text-bold uppercase text-purple-300 italic text-2xl">
+                  26 de Agosto de 2023
+                </h2>
+                <h2 className="text-center text-bold uppercase text-purple-300 italic text-2xl">
+                  22 Hrs
                 </h2>
               </div>
+            </div>
           </Fade>
         ) : (
           <Fade>
