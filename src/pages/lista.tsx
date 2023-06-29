@@ -30,8 +30,9 @@ function Convidado(convidado: any) {
       <span
         className="px-3 py-2 shadow rounded-xl active:bg-green-100 cursor-pointer text-xl"
         onClick={() => {
+          const nome = convidado.nome.replace(' ', '%20').replace(' ', '%20').replace(' ', '%20').replace(' ', '%20')
           navigator.clipboard.writeText(
-            `https://mariaclara15anos.vercel.app/convite/${convidado.nome}`
+            `https://mariaclara15anos.vercel.app/convite/${nome}`
           )
           setCopied(true)
         }}
