@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { Fade } from 'react-reveal'
 import Container from '../../components/Partials/Container'
+import { convidados } from '../lista'
 
 type Props = {
   nome: string
@@ -62,11 +63,14 @@ export default function Nome(props: Props) {
 }
 
 export async function getStaticPaths() {
-  const paths = [
-    { params: { nome: 'Jon Castiel' } },
-    { params: { nome: 'Angelo' } },
-    { params: { nome: 'Mary' } },
-  ]
+
+  const paths = convidados.map((convidado) => {
+    return {
+      params: {
+        nome: convidado.nome,
+      },
+    }
+  })
 
   return { paths, fallback: false }
 }

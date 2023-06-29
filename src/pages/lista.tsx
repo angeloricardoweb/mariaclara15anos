@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Container from '../components/Partials/Container'
 import { Icon } from '@iconify/react'
-const convidados = [
+export const convidados = [
   { nome: 'Jon Castiel' },
   { nome: 'Angelo' },
   { nome: 'Mary' },
