@@ -19,7 +19,9 @@ export default function Nome(props: Props) {
   }, [])
 
   return (
-    <div className="bg-[url(/bg.jpg)] h-screen bg-cover bg-center flex flex-col items-center justify-center">
+    <div
+      className="bg-convite"
+    >
       <Container>
         {aberto ? (
           <Fade>
@@ -30,27 +32,37 @@ export default function Nome(props: Props) {
               "
             />
             <div className="max-w-xl mt-10">
-              <h2 className="text-center text-bold text-rose-100 italic text-lg">
+              <h2 className="text-center text-bold text-white italic text-2xl">
                 Para viver emoções deste dia tão importante quero estar ao lado
                 de pessoas especiais como você, <strong> {nome}.</strong>
               </h2>
               <div className="mt-20">
-                <h2 className="text-center text-bold uppercase text-rose-100 italic text-lg">
+                <h2 className="text-center text-bold uppercase text-white italic text-lg">
                   Cidade Nova 6, We 72 n°921 - Coqueiro, Ananindeua
                 </h2>
-                <h2 className="text-center text-bold uppercase text-purple-300 italic text-2xl">
+                <h2 className="text-center text-bold uppercase text-white italic text-3xl">
                   26 de Agosto de 2023
                 </h2>
-                <h2 className="text-center text-bold uppercase text-purple-300 italic text-2xl">
+                <h2 className="text-center text-bold uppercase text-white italic text-3xl">
                   22 Hrs
                 </h2>
+              </div>
+              <div className="w-full flex justify-center mt-10">
+                <a
+                  href="https://goo.gl/maps/M1YF2AQ4e6eyy4UM6"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-center text-cyan-800 mx-auto px-3 py-1 bg-rose-100 rounded-xl"
+                >
+                  Ver local no mapa
+                </a>
               </div>
             </div>
           </Fade>
         ) : (
           <Fade>
-            <div className="flex flex-col items-end justify-center text-rose-100">
-              <h2 className="text-2xl italic">
+            <div className="flex flex-col items-end justify-center text-white">
+              <h2 className="text-3xl italic">
                 Como as Plantas, a amizade não deve ser muito nem pouco regada.
               </h2>
               <span>- Carlos Drummond de Andrade</span>
@@ -63,7 +75,6 @@ export default function Nome(props: Props) {
 }
 
 export async function getStaticPaths() {
-
   const paths = convidados.map((convidado) => {
     return {
       params: {
