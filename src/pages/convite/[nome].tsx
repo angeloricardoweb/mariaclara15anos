@@ -12,6 +12,8 @@ export default function Nome(props: Props) {
   const [aberto, setAberto] = useState(false)
   const { nome } = props
 
+  const spaces = nome.split(' ').length - 1
+
   useEffect(() => {
     setTimeout(() => {
       setAberto(true)
@@ -33,8 +35,8 @@ export default function Nome(props: Props) {
             />
             <div className="max-w-xl mt-10">
               <h2 className="text-center text-bold text-white italic text-2xl">
-                Para viver emoções deste dia tão importante quero estar ao lado
-                de pessoas especiais como você, <strong> {nome}.</strong>
+                Para viver emoções deste dia tão importante, quero estar ao lado
+                de pessoas especiais como você{spaces >= 2 && 's'}, <strong> {nome}.</strong>
               </h2>
               <div className="mt-20">
                 <h2 className="text-center text-bold uppercase text-white italic text-lg">
