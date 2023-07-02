@@ -3,9 +3,6 @@ import Container from '../components/Partials/Container'
 import { Icon } from '@iconify/react'
 
 export const convidados = [
-  { nome: 'Jon Castiel' },
-  { nome: 'Angelo' },
-  { nome: 'Mary' },
   { nome: 'Vovó Djanira' },
   { nome: 'Tia Tereza e tio Reis' },
   { nome: 'Reinaldo' },
@@ -21,11 +18,12 @@ export const convidados = [
   { nome: 'Carol e Adria' },
   { nome: 'Vitor e Vitória' },
   { nome: 'D. Rita e família' },
+  { nome: 'Alesi e Laís' },
+  { nome: 'Alexandre e família' },
   { nome: 'Tio Antônio e família' },
   { nome: 'Tio Francisco e família' },
   { nome: 'Tio Fernando e família' },
   { nome: 'Tio Fernando e Áurea' },
-  { nome: 'Alesi e Laís' },
   { nome: 'Francisco e Terezinha' },
   { nome: 'Zé Carlos e Maria José' },
   { nome: 'Rocha e Soraya' },
@@ -33,12 +31,11 @@ export const convidados = [
   { nome: 'Marcelo e Jucy' },
   { nome: 'Celina' },
   { nome: 'D Ivana' },
-  { nome: 'Alzira' },
-  { nome: 'Hordilene' },
+  { nome: 'Alzira Ramos' },
   { nome: 'Maia e Margarida' },
   { nome: 'Socorro e Maria Clara' },
   { nome: 'Ana Clara' },
-  { nome: 'Hordilene e Alice' },
+  { nome: 'Hordilene e Halice' },
   { nome: 'Maria Eduarda' },
   { nome: 'Edna e Ana Laura' },
   { nome: 'Bárbara' },
@@ -50,6 +47,8 @@ export const convidados = [
   { nome: 'Vanderson' },
   { nome: 'Luis' },
   { nome: 'Carlos Edurado' },
+  { nome: 'Pe. Luciano Pereira' },
+  { nome: 'Layane e Família' },
 ]
 
 export default function lista() {
