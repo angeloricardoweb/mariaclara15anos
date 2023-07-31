@@ -4,6 +4,7 @@ import { DefaultSeo } from 'next-seo'
 import 'swiper/css/bundle'
 import '../styles/index.scss'
 import { useEffect, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [isMobile, setIsMobile] = useState(false)
@@ -30,6 +31,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           <h1 className="text-3xl text-center">Acesse pelo Celular</h1>
         </div>
       )}
+      <Analytics />
     </>
   )
 }
