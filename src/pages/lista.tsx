@@ -49,6 +49,10 @@ export const convidados = [
   { nome: 'Carlos Edurado' },
   { nome: 'Pe. Luciano Pereira' },
   { nome: 'Layane e Família' },
+  { nome: 'Luiz e Katia' },
+  { nome: 'Orlando e Edna' },
+  { nome: 'Naldo e Nilda' },
+  { nome: 'Maia e Margarida' },
 ]
 
 export default function lista() {
