@@ -3,6 +3,8 @@ import Container from '../components/Partials/Container'
 import { Icon } from '@iconify/react'
 
 export const convidados = [
+  { nome: 'Filipe' },
+  { nome: 'Thalya' },
   { nome: 'Vovó Djanira' },
   { nome: 'Tia Tereza e tio Reis' },
   { nome: 'Reinaldo' },
